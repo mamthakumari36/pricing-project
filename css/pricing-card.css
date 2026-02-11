@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Montserrat;
+    background-color: hsl(240, 78%, 98%);
+}
+
+.container {
+    height: auto;
+    background-image: url('../images/image.png'), url('../images/image-bottom.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+
+
+@media (min-width: 375px) {
+    .container {
+        background-position: top right, bottom left;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 70px 0 50px;
+        color: rgb(95, 94, 94);
+        font-size: 40px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 25px;
+        color: rgb(168, 164, 164);
+        font-size: 20px;
+    }
+
+    .toggle-btn {
+        border: none;
+        width: 70px;
+        height: 40px;
+        border-radius: 20px;
+        position: relative;
+        background-color: rgb(150, 129, 226);
+        cursor: pointer;
+    }
+
+    .left,
+    .right {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: white;
+    }
+
+    .left {
+        top: 5px;
+    }
+
+    .right {
+        right: 5px;
+        top: 5px;
+    }
+
+    .card-layout {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin-top: 90px;
+        color: rgb(95, 93, 93);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .card {
+        background-color: hsl(240, 78%, 98%);
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgb(167, 165, 165);
+        height: auto;
+        width: 300px;
+        padding: 40px 20px;
+        font-size: 20px;
+    }
+
+    .card h3 {
+        text-align: center;
+    }
+
+    .card .price {
+        font-size: 4.5rem;
+        text-align: center;
+        margin: 15px 0;
+        color: black;
+    }
+
+    .currency {
+        font-size: 30px;
+    }
+
+    .card p {
+        text-align: center;
+        margin: 15px 0;
+        font-weight: 600;
+    }
+
+    .btn {
+        margin: 30px 0 0;
+        width: 100%;
+        padding: 15px 10px;
+        font-weight: 700;
+        font-size: 17px;
+        color: white;
+        background: linear-gradient(to right, hsl(240, 74%, 82%), hsl(240, 71%, 63%));
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .card-layout {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+}
