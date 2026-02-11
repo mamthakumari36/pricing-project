@@ -94,14 +94,13 @@ body {
         height: auto;
         width: 300px;
         padding: 40px 20px;
-        font-size: 20px;
-        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        font-size: 18px;
+        transition: transform 0.5s ease, background 0.3s ease, color 0.3s ease;
     }
 
-    .card:hover,
-    .btn:hover {
-        transform: scale(1.08);
-        background-color: hsl(240, 71%, 63%);
+    .card:hover {
+        transform: scale(1.1);
+        background: linear-gradient(to bottom right, hsl(240, 74%, 82%), hsl(240, 71%, 63%));
         color: white;
     }
 
@@ -110,14 +109,19 @@ body {
     }
 
     .card .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
         font-size: 4.5rem;
-        text-align: center;
         margin: 15px 0;
         color: black;
+        transition: color 0.3s ease;
     }
 
     .currency {
         font-size: 30px;
+        transition: color 0.3s ease;
     }
 
     .card p {
@@ -137,6 +141,17 @@ body {
         border: none;
         border-radius: 10px;
         cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .card:hover .price,
+    .card:hover .currency {
+        color: white;
+    }
+
+    .card:hover .btn {
+        background: white;
+        color: hsl(240, 71%, 63%);
     }
 }
 
