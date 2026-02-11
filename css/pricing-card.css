@@ -20,8 +20,6 @@ body {
     padding-bottom: 50px;
 }
 
-
-
 @media (min-width: 375px) {
     .container {
         background-position: top right, bottom left;
@@ -97,6 +95,14 @@ body {
         width: 300px;
         padding: 40px 20px;
         font-size: 20px;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .card:hover,
+    .btn:hover {
+        transform: scale(1.08);
+        background-color: hsl(240, 71%, 63%);
+        color: white;
     }
 
     .card h3 {
