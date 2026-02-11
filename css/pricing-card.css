@@ -16,7 +16,8 @@ body {
     background-image: url('../images/image.png'), url('../images/image-bottom.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
 
 
@@ -134,6 +135,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+    .container {
+        height: 100vh;
+    }
 
     .card-layout {
         flex-direction: row;
